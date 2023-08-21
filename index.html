@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Walter_Fang的记事本</title>
+</head>
+<body>
+    <h1>Walter_Fang的记事本</h1>
+    <textarea id="note" rows="40" cols="200" placeholder="在这里输入你的笔记..."></textarea>
+    <br>
+    <button id="saveButton">保存</button>
+    <button id="clearButton">清空</button>
+    <div id="savedMessage"></div>
+
+    <script>
+        const noteTextarea = document.getElementById("note");
+        const saveButton = document.getElementById("saveButton");
+        const clearButton = document.getElementById("clearButton");
+        const savedMessage = document.getElementById("savedMessage");
+        noteTextarea.value = localStorage.getItem("savedNote") || "";
+        saveButton.addEventListener("click", function() {
+            const password = prompt("请输入密码:");
+            if (password === "FCfc1717") {
+                const noteContent = noteTextarea.value;
+                localStorage.setItem("savedNote", noteContent);
+                savedMessage.textContent = "笔记已保存！";
+                setTimeout(() => {
+                    savedMessage.textContent = "";
+                }, 2000);
+            } else {
+                alert("密码错误！");
+            }
+        });
+        clearButton.addEventListener("click", function() {
+            const password = prompt("请输入密码:");
+            if (password === "FCfc1717") {
+                noteTextarea.value = "";
+                localStorage.removeItem("savedNote");
+                savedMessage.textContent = "笔记已清空！";
+                setTimeout(() => {
+                    savedMessage.textContent = "";
+                }, 2000);
+            } else {
+                alert("密码错误！");
+            }
+        });
+    </script>
+</body>
+</html>
