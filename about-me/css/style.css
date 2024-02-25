@@ -1,0 +1,96 @@
+body {
+  font-family: 'Arial', sans-serif;
+  margin: 0;
+  padding: 0;
+  background-color: #f5f5f5;
+}
+
+header {
+  background-color: #87CEEB; /* 浅蓝色 */
+  color: #fff;
+  text-align: center;
+  padding: 20px;
+}
+
+header h1 {
+  margin: 0;
+}
+
+.about-me,
+.爱好,
+.contact,
+.empty-section,
+.tech-share {
+  max-width: 800px;
+  margin: 20px auto;
+  padding: 20px;
+  background-color: #fff;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.skills ul,
+.empty-section ul {
+  list-style: none;
+  padding: 0;
+}
+
+.skills li,
+.empty-section li {
+  display: inline-block;
+  margin-right: 10px;
+  background-color: #eee;
+  padding: 5px 10px;
+  border-radius: 5px;
+}
+
+footer {
+  text-align: center;
+  padding: 10px;
+  background-color: #87CEEB; /* 浅蓝色 */
+  color: #fff;
+}
+
+.new-column {
+  max-width: 800px;
+  margin: 20px auto;
+  padding: 20px;
+  background-color: #fff;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+/* 新添加的样式 */
+
+.new-column h2 {
+  margin-top: 0;
+}
+
+.tech-share {
+  /* 添加您需要的样式 */
+}
+
+/* 以下是一些示例样式 */
+
+.tech-share h2 {
+  margin-top: 0;
+}
+
+.tech-share p {
+  text-align: justify;
+}
+
+.tech-share ul {
+  list-style: none;
+  padding: 0;
+}
+
+.tech-share li {
+  margin-bottom: 10px;
+  padding: 5px 10px;
+  border: 1px solid #ddd;
+  border-radius: 5px;
+}
+
+.tech-share img {
+  max-width: 100%;
+  margin: 10px 0;
+}
