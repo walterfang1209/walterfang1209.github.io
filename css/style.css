@@ -6,7 +6,7 @@ body {
 }
 
 header {
-    background-color: #87CEEB; /* 浅蓝色 */
+    background-color: #87CEEB;
     color: #fff;
     text-align: center;
     padding: 20px;
@@ -45,6 +45,6 @@ header h1 {
 footer {
     text-align: center;
     padding: 10px;
-    background-color: #87CEEB; /* 浅蓝色 */
+    background-color: #87CEEB;
     color: #fff;
 }

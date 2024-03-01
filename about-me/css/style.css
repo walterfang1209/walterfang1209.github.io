@@ -6,7 +6,7 @@ body {
 }
 
 header {
-  background-color: #87CEEB; /* 浅蓝色 */
+  background-color: #87CEEB;
   color: #fff;
   text-align: center;
   padding: 20px;
@@ -46,7 +46,7 @@ header h1 {
 footer {
   text-align: center;
   padding: 10px;
-  background-color: #87CEEB; /* 浅蓝色 */
+  background-color: #87CEEB;
   color: #fff;
 }
 
@@ -58,17 +58,9 @@ footer {
   box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
 }
 
-/* 新添加的样式 */
-
 .new-column h2 {
   margin-top: 0;
 }
-
-.tech-share {
-  /* 添加您需要的样式 */
-}
-
-/* 以下是一些示例样式 */
 
 .tech-share h2 {
   margin-top: 0;

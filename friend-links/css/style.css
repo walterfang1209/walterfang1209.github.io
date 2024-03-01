@@ -1,0 +1,57 @@
+/* CSS for creating 6 bubble buttons */
+
+/* Define common styles for all buttons */
+.bubble-button {
+    display: inline-block;
+    position: relative;
+    width: 200px;
+    height: 200px;
+    border-radius: 50%;
+    background-color: #3498db;
+    color: #fff;
+    text-align: center;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+/* Define styles for each individual button */
+#button1 {
+    background-image: url('path/to/image1.jpg');
+}
+
+#button2 {
+    background-image: url('path/to/image2.jpg');
+}
+
+#button3 {
+    background-image: url('path/to/image3.jpg');
+}
+
+#button4 {
+    background-image: url('path/to/image4.jpg');
+}
+
+#button5 {
+    background-image: url('path/to/image5.jpg');
+}
+
+#button6 {
+    background-image: url('path/to/image6.jpg');
+}
+
+/* Add hover effect */
+.bubble-button:hover {
+    background-color: #2980b9;
+}
+
+/* Add title and description */
+.bubble-button .title {
+    font-size: 18px;
+    font-weight: bold;
+    margin-top: 20px;
+}
+
+.bubble-button .description {
+    font-size: 14px;
+    margin-top: 10px;
+}
