@@ -1,10 +1,62 @@
 <!DOCTYPE html>
-<html lang="en">
+<html>
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>添加您的友链</title>
-    <link rel="stylesheet" href="style.css">
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f2f2f2;
+        }
+
+        .container {
+            max-width: 600px;
+            margin: 0 auto;
+            padding: 20px;
+            background-color: #fff;
+            border-radius: 5px;
+            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+        }
+
+        h1 {
+            font-size: 24px;
+            color: #333;
+            margin-bottom: 20px;
+        }
+
+        p {
+            font-size: 16px;
+            color: #666;
+            margin-bottom: 10px;
+        }
+
+        label {
+            font-size: 16px;
+            color: #333;
+            margin-bottom: 5px;
+        }
+
+        input[type="text"] {
+            width: 100%;
+            padding: 10px;
+            font-size: 16px;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+            margin-bottom: 10px;
+        }
+
+        button[type="submit"] {
+            padding: 10px 20px;
+            font-size: 16px;
+            background-color: #007bff;
+            color: #fff;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+
+        button[type="submit"]:hover {
+            background-color: #0056b3;
+        }
+    </style>
 </head>
 <body>
     <div class="container">
@@ -12,8 +64,21 @@
         <p>贵站地址：要求一个URL链接。</p>
         <p>您的名称：用于显示您的称号。</p>
         <p>一句格言：可以是一句您的个签，这将成为您的象征。</p>
-        <p>确认无误后，请将以上内容发送邮件至我的邮箱Walter20101209@gmail.com。</p>
-        <p>作者实在是懒得写css了www</p>
+        <form action="https://formspree.io/f/xpzvlrlb" method="POST">
+            <label for="website">贵站地址：</label>
+            <input type="text" id="website" name="website" required>
+            <br>
+            <label for="name">您的名称：</label>
+            <input type="text" id="name" name="name" required>
+            <br>
+            <label for="slogan">一句格言：</label>
+            <input type="text" id="slogan" name="slogan" required>
+            <br>
+            <input type="hidden" name="_next" value="thanks.html" />
+            <input type="hidden" name="_subject" value="新的友链请求" />
+            <input type="hidden" name="_replyto" value="Walter20101209@gmail.com" />
+            <button type="submit">提交</button>
+        </form>
     </div>
 </body>
 </html>
